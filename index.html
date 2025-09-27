@@ -95,6 +95,106 @@
         </tr>
         </tbody></table>
         <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="img/lae_gif.gif" alt="Latent Activation Editing" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2509.20623">
+                <papertitle><b>Latent Activation Editing: Inference-Time Refinement of Learned Policies for Safer Multirobot Navigation</b></papertitle>
+              </a>
+              <br>
+              <strong>Satyajeet Das</strong>, Darren Chiu, Zhehui Huang, Lars Lindemann, Gaurav S. Sukhatme
+              <br>
+              <em> Submitted to <a href="https://2026.ieee-icra.org/" target="_blank">ICRA 2026</a></em>
+              <br>
+              <a href="https://arxiv.org/abs/2509.20623">paper</a>
+              <p></p>
+              <p style="text-align: justify;">
+              Latent Activation Editing (LAE) is a framwork for inference-time behavior steering / refinement of pre-trained robot policies without retraining.
+              Through a Latent Collision World Model, the detected unsafe activations are replaced on the fly, delivering 90% fewer collisions (safer behavior) in multi-robot quadrotor navigation while maintaining task success.
+              The work establishes LAE as a lightweight framework for behavior enhancement, deployable even on resource-constrained robotic systems.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src="img/ward.gif" alt="Latent Weight Diffusion" width="160" style="border-style: none">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2410.14040">
+              <papertitle><b>WARPD: World model Assisted Reactive Policy Diffusion</b></papertitle>
+            </a>
+            <br>
+            Shashank Hegde, <strong>Satyajeet Das</strong>, Gautam Salhotra, Gaurav S. Sukhatme
+            <br>
+            <em>Submitted to <a href="https://iclr.cc/" target="_blank">ICLR 2026</a></em>
+            <br>
+            <a href="https://arxiv.org/abs/2410.14040">paper</a>
+            <p></p>
+            <p style="text-align: justify;">
+             WARPD extends diffusion-based policy generation by combining latent diffusion, hypernetworks, and a learned world model. Instead of generating trajectories, WARPD produces policy weights, while the world model provides dynamics-aware corrections during training. 
+             This yields reactive closed-loop policies that remain robust under perturbations, scale to longer action horizons, and achieve lower inference cost than standard diffusion policies.
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+      <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src="img/LWD-GIF.gif" alt="Latent Weight Diffusion" width="160" style="border-style: none">
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2410.14040">
+              <papertitle><b>Latent Weight Diffusion: Generating Reactive Policies instead of Trajectories</b></papertitle>
+            </a>
+            <br>
+            Shashank Hegde, <strong>Satyajeet Das</strong>, Gautam Salhotra, Gaurav S. Sukhatme
+            <br>
+            <em>NeurIPS 2025 Embodied World Models for Decision Making Workshop, RSS 2025 Resource constrained robotics workshop</em>
+            <br>
+            <a href="https://arxiv.org/abs/2410.14040">paper</a>
+            <p></p>
+            <p style="text-align: justify;">
+              Latent Weight Diffusion (LWD) introduced the shift from trajectory generation to policy generation, where a diffusion model learns a latent trajectory space and a hypernetwork decoder transforms it into policy weights, yielding reactive closed-loop policies.
+              This approach delivers long-horizon robustness and achieves ~45x lower inference compute while maintaining SOTA performance across manipulation and locomotion tasks.
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+      <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="img/rnbf_gif.gif" alt="PontTuset" width="160" style="border-style: none">
+            </td>
+            <td style= "padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2505.02294" id="MCG_journal">
+                <papertitle><b>Real-Time Perception Based Control Barrier Functions for Efficient Robotic Navigation Using Depth Camera</b></papertitle>
+              </a>
+              <br>
+		          <strong>Satyajeet Das</strong>, Yifan Xue, Haoming Li, Nadia Figueroa
+              <br>
+              <em> Submitted to <a href="https://sice-si.org/SII2026/" target="_blank">IEEE/SICE SII 2026</a></em>
+              <br>
+              <a href="https://arxiv.org/abs/2505.02294">paper</a>
+              <p></p> 
+              <p style="text-align: justify;"> 
+                RNBF brings NeRF(Neural Radiance Fields)-inspired 3D scene reconstruction directly into the robot's control loop by learning continuous, differentiable neural signed distance fields (SDFs) online from noisy RGB-D input. 
+                Unlike prior NeRF/iSDF methods that are offline or require pretraining, RNBF updates its neural SDFs in real time (5-15 Hz) and feeds them into standard Control Barrier Function (CBF-QP) controllers, enabling safer navigation in unknown environments using only a depth camera.
+
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+
+
+
+
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -112,17 +212,30 @@
             </script>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="">
+            <a href="https://arxiv.org/abs/2403.08149">
               <span class="papertitle">On the Feasibility of EEG-based Motor Intention Detection for Real-Time Robot Assistive Control</span>
             </a>
             <br>
-            Ho Jin Choi*,
+            <!-- Ho Jin Choi*,
             <strong>Satyajeet Das*</strong>,
             Shaoting Peng*,
             Ruzena Bajcsy,
-            Nadia Figueroa
+            Nadia Figueroa -->
+            Ho Jin Choi
+            <a class="eq-info" tabindex="0" data-toggle="tooltip" title="Equal contribution">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </a>,
+            <strong>Satyajeet Das</strong>
+            <a class="eq-info" tabindex="0" data-toggle="tooltip" title="Equal contribution">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </a>,
+            Shaoting Peng
+            <a class="eq-info" tabindex="0" data-toggle="tooltip" title="Equal contribution">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </a>,
+            Ruzena Bajcsy, Nadia Figueroa
             <br>
-            <em>ICRA 2024</em>
+            <em> <a href="https://2024.ieee-icra.org/">ICRA 2024</a></em>
             <br>
             <a href="https://github.com/penn-figueroa-lab/eeg-project">code</a>
             /
@@ -130,7 +243,11 @@
             /
             <a href="data/EEG.pdf">paper</a>
             <p></p>
-            <p>Investigated the feasibility of using electroencephalogram (EEG) to achieve binary motor intention classification for robot assistive control in real-time.</p>
+            <p style="text-align: justify;">
+            This work demonstrates the feasibility of using EEG signals for real-time motor intention decoding to control assistive robots. 
+            Leveraging Riemannian geometry features from EEG covariance matrices and a lightweight SVM classifier, the system achieves ~70% online accuracy in robot-in-the-loop experiments for left/right arm intention prediction. 
+            These results establish a practical pathway toward non-invasive brain–robot interfaces for assistive robotics.            
+            </p>
             <br>
             <!-- <br> -->
           </td>
@@ -177,25 +294,7 @@
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="img/Paper_sdf.png" alt="PontTuset" width="160" style="border-style: none">
-            </td>
-            <td style= "padding:20px;width:75%;vertical-align:middle">
-              <a href="" id="MCG_journal">
-                <papertitle><b>Real-Time Perception Based Control Barrier Functions for Efficient Robotic Navigation Using Depth Camera</b></papertitle>
-              </a>
-              <br>
-		          <strong>Satyajeet Das</strong>, Yifan Xue, Nadia Figueroa
-              <br>
-              <em>To be Submitted</em>
-              <br>
-              <p></p> 
-              <p> Developed a real time Signed Distance Function generator based of neural radiance fields for construction of online perception based CBFs without prior training using a depth camera for efficient and safe robot navigation. </p>
-            </td>
-          </tr>
-        </tbody></table>
+
         <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="width:100%;vertical-align:middle">
@@ -585,6 +684,37 @@
             </td>
           </tr>
         </tbody></table>
+          <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="img/usc.png", width="160"></td>
+
+              <td style="padding:10px;width:75%;vertical-align:top">
+                <!-- <papertitle style="color:gray"><big>Software Development Engineer Intern</big> </papertitle> <papertitle ><big> | Expedia Group</big></papertitle> -->
+                <b style="font-size: 20px;">University of Pennsylvania</b>
+                <br>
+                <!-- <br> -->
+                <papertitle><big>Doctor of Philosophy (PhD) in </big></papertitle><papertitle><big>Computer Science (Robotics & Machine Learning)</big></papertitle>
+                <br>
+                August 2024 - 
+                <!-- <br>  -->
+                <!-- <br> -->
+                <!---->
+                <p>
+                    <!-- Research: -->
+                    <!-- <ul> -->
+                         <!-- <li>Graduate researcher at <a href="https://www.grasp.upenn.edu/">GRASP Lab</a></li>
+                         <li>Advisor at <a href="https://firstworkapp.com/">FIRSTWORK</a></li>
+                         <li>Graduate Assistant for GSC</li>  
+                         <li>Member of Penn Quant Trading Club</li>
+                   -->
+                    <!-- </ul> -->
+                </p>
+              </td>
+
+          </tr>
+
         <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
           <tr>
@@ -718,6 +848,33 @@
       </td>
     </tr>
   </table>
+  <!-- <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script> -->
+  <script>
+    $(function () {
+      // enable tooltips everywhere
+      $('body').tooltip({
+        selector: '[data-toggle="tooltip"]'
+      });
+
+      // smooth scroll for anchor links
+      $("a.page-scroll").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+  
   <script>
     $(document).ready(function(){
       $("a.page-scroll").on('click', function(event) {
